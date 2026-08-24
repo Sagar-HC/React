@@ -1,5 +1,6 @@
 import './App.css'
 
+//Title comp
 function Title(){
   return (<h1>sagarji</h1>)
     
