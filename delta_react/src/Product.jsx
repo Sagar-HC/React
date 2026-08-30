@@ -1,11 +1,14 @@
 import "./Product.css"
-function Product({title="default",price=2,arrs}){
-  let isDiscount = price>=3000?<p>discount:5%</p>:""
+import Keemat from "./price";
+function Product({title,idx}){
+  let oldPrices = ["20","200","2000","20000"];
+  let newPrices = ["10","100","1000","10000"];
+  let description =["dpi 100","emi katto","waste mouse","nangu gottila"];
     return(
-        <div className="Product">         
-          <h1>{title}</h1>
-          <h2>Price:{price/2}</h2>  
-          <p>{isDiscount}</p>
+        <div className="Product" >  
+          <p>{title}</p>
+          <p>{description[idx]}</p>
+          <Keemat oldPrice={oldPrices[idx]} newPrice ={newPrices[idx]}/>
             </div>
     )
 }

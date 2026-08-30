@@ -1,14 +1,21 @@
 import Product from "./Product"
 
 function ProductStack(){
- 
+ let styles={
+    display:"flex",
+    flexWrap:"wrap",
+    justifyContent:"center",
+    alignItems:"center",
+ };
     return(
-        <div>
-        <Product title=" faah" price = {2000} />
-        <Product />
-        <Product title="faahfaaaaaaaaaaaaaaaaaaah" price ={1221} />
-        <Product title="faahfaaaaaaah" price = {20020}/>
-        </div>
+
+    <div style={styles}>
+        
+        <Product title="Logitech mx master" idx={0}/>
+        <Product title="Iphone faaaaah" idx={1}/>
+        <Product title="zeb shit zebroniccs" idx={2}/>
+        <Product title="gottillo maara" idx={3}/>
+    </div>
     )
 }
 
