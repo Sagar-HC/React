@@ -1,14 +1,11 @@
 import './App.css'
-import ProductStack from './ProductStack'
+import  Button from './button'
 
 function App() {
   return (
-<div className='app'>
-<h1>Heading</h1>
-<ProductStack/>
-</div>
-  
-  
+<>
+<Button />
+</>
   )
 };
 
