@@ -1,11 +1,13 @@
 import Counter from "./counter"
+import Like from "../like"
 
 function App() {
 
   return (
     <>
-     <h1>faaaaah</h1>
-     <Counter/>
+    <h2>states in react </h2>
+     <Like />
+
     </>
   )
 }
