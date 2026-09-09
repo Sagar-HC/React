@@ -1,14 +1,13 @@
 import { useState } from 'react'
-import Lboard from './ludoboard'
-import TodoList from './todolist'
-import Lottery from './lottery'
-import Ticket from './ticket'
+import Input from './input'
+
+
 
 
 function App() {
   return (
     <>
-      <Ticket ticket={[0,1,3]}/>
+    <Input />
     </>
   )
 }
