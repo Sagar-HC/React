@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Input from './input'
+import Joker from './joker'
 
 
 
@@ -7,7 +7,7 @@ import Input from './input'
 function App() {
   return (
     <>
-    <Input />
+    <Joker />
     </>
   )
 }

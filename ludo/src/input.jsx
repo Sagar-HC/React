@@ -3,7 +3,8 @@ import { useState } from "react"
 export default function Input(){
     let [formData,setformData] = useState({
         userName:"",
-        fullName:""
+        fullName:"",
+        password:"",
     });
 
     let changeInputValue = (event)=>{
@@ -15,23 +16,24 @@ export default function Input(){
 
     let handleSubmit =(event)=>{
         event.preventDefault();
-
+        console.log(formData);
         setformData({
              userName:"",
              fullName:"",
+             password:"",
 
         });
     }
     return(
-        <div>
+       
         <form onSubmit={handleSubmit}>
-            <input type="text" value={FormData.username} onChange={changeInputValue} id="fullName" name="fullName" /> 
-            <button >submit</button>  
+            <input type="text" value={formData.fullName} onChange={changeInputValue} id="fullName" name="fullName" /> 
             <br /><br />
-            <input type="text" value={FormData.fullname} onChange={changeInputValue} id="userName" name="userName"/> 
+            <input type="text" value={formData.userName} onChange={changeInputValue} id="userName" name="userName"/> 
+            <br />
+            <input type="password" value={formData.password} onChange={changeInputValue} id="password" name="password"/> 
             <button>submit</button>  
         </form>
-        </div>
         
     )
 }
