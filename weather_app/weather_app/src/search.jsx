@@ -8,7 +8,7 @@ export default function Search({updateInfo}){
     let [city,setCity] =useState("");
     let [error,setError] =useState(false);
     const url ="http://api.openweathermap.org/data/2.5/weather";
-    const api = "99e09b26f83de4261561b64bb2e05fc8";
+    const api = import.meta.env.VITE_WEATHER_API_KEY;
 
     let getWeather = async() =>{
         try{ let response = await fetch(`${url}?q=${city}&appid=${api}&units=metric`);
