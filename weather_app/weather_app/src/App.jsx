@@ -1,13 +1,10 @@
-import { useState } from 'react';
-import Search from './search';
-
+import WeatherApp from "./weatherApp"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-    <Search/>
+    <WeatherApp/>
     </>
   )
 }
